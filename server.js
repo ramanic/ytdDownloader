@@ -4,7 +4,7 @@ const fs = require('fs');
 const app = express();
 var url = require('url');
 const ytdl = require('ytdl-core');
-const port = process.env.port || 8000;
+const port = process.env.PORT || 8000;
 request = require('request');
 var download = function (uri, filename, callback) {
   request.head(uri, function (err, res, body) {
